@@ -28,10 +28,11 @@ const Dock = () => {
             {windows.map((win) => (
               <motion.div
                 key={win.id}
-                initial={{ scale: 0.8, opacity: 0, y: 10 }}
+                initial={{ scale: 0.9, opacity: 0, y: 5 }}
                 animate={{ scale: 1, opacity: 1, y: 0 }}
-                exit={{ scale: 0.8, opacity: 0, y: 10 }}
-                transition={{ duration: 0.2 }}
+                exit={{ scale: 0.9, opacity: 0, y: 5 }}
+                transition={{ type: "tween", duration: 0.15, ease: [0.25, 0.1, 0.25, 1.0] }}
+                style={{ willChange: 'transform, opacity' }}
                 className="relative group"
                 onClick={() => restoreWindow(win.id)}
               >

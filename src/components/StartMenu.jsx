@@ -59,14 +59,15 @@ const StartMenu = () => {
   return (
     <AnimatePresence>
       {startMenuOpen && (
-        <motion.div
-           initial={{ opacity: 0, y: 50, scale: 0.95 }}
+         <motion.div
+           initial={{ opacity: 0, y: 20, scale: 0.98 }}
            animate={{ opacity: 1, y: 0, scale: 1 }}
-           exit={{ opacity: 0, y: 20, scale: 0.95 }}
-           transition={{ type: "spring", stiffness: 300, damping: 25 }}
+           exit={{ opacity: 0, y: 10, scale: 0.98 }}
+           transition={{ type: "tween", duration: 0.15, ease: [0.25, 0.1, 0.25, 1.0] }}
+           style={{ willChange: 'transform, opacity' }}
            className="fixed bottom-16 left-1/2 transform -translate-x-1/2 w-[600px] h-[700px] bg-gray-900/90 backdrop-blur-xl border border-white/10 rounded-lg shadow-2xl z-50 flex flex-col p-6 text-white overflow-hidden"
            onClick={(e) => e.stopPropagation()} // Prevent close on click inside
-        >
+         >
            {/* Search Bar */}
            <div className="relative mb-6">
                <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">

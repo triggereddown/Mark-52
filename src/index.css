@@ -1,5 +1,14 @@
 @import "tailwindcss";
 
+* {
+  /* Enable GPU acceleration for all elements */
+  transform: translate3d(0, 0, 0);
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -7,3 +16,4 @@ body {
   font-family: 'Segoe UI', user-select, sans-serif;
   user-select: none;
 }
+
