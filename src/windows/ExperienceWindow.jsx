@@ -32,8 +32,8 @@ const ExperienceWindow = () => {
           <ExperienceItem 
              index={0}
              title="Full Stack Developer Intern"
-             company="TechStartup Inc."
-             period="June 2025 - Present"
+             company="GamerThred"
+             period="June 2025 - September 2025"
              description="Built responsive dashboards using React and Recharts. Integrated REST APIs for real-time data visualization. Optimized frontend performance by 30%."
           />
           <ExperienceItem 
