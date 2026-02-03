@@ -1,0 +1,21 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1920" height="1080" fill="#010014"/>
+  <rect width="1920" height="1080" fill="url(#paint0_linear_bloom_dark)"/>
+  
+  <g opacity="0.8" filter="url(#filter0_f_bloom_dark)">
+    <path d="M960 540C1200 400 1500 200 1300 100C1100 0 800 200 560 300C320 400 100 600 300 800C500 1000 800 900 960 540Z" fill="#1E3A8A" fill-opacity="0.6"/>
+    <path d="M960 540C720 680 420 880 620 980C820 1080 1120 880 1360 780C1600 680 1820 480 1620 280C1420 80 1120 180 960 540Z" fill="#4C1D95" fill-opacity="0.6"/>
+  </g>
+  
+  <defs>
+    <linearGradient id="paint0_linear_bloom_dark" x1="960" y1="0" x2="960" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#020418"/>
+      <stop offset="1" stop-color="#090518"/>
+    </linearGradient>
+    <filter id="filter0_f_bloom_dark" x="0" y="0" width="1920" height="1080" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+      <feGaussianBlur stdDeviation="150" result="effect1_foregroundBlur_bloom_dark"/>
+    </filter>
+  </defs>
+</svg>
